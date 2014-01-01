@@ -10,6 +10,13 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Algorithms.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="InsertionSort.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9B423982-4836-4D88-85DC-49889A6D4723}</ProjectGuid>
     <RootNamespace>Sort</RootNamespace>
@@ -63,13 +70,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\Sort_Algorithms\Sort\Sort\Algorithms.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\Sort_Algorithms\Sort\Sort\InsertionSort.cpp" />
-    <ClCompile Include="..\..\..\Sort_Algorithms\Sort\Sort\Main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
