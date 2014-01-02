@@ -3,19 +3,19 @@
 #include <vector>
 using namespace std;
 
-vector <int> Insertion(vector<int>temp,int size)
+vector <int> Insertion(vector<int>InsertionTemp)
 {
-	int tmp,j;
-	for(int i=1;i<size;i++)
+	int temp,j;
+	for(int i=1;i<InsertionTemp.size();i++)
 	{
 		j=i;
-		while(j>0 && temp.at(j-1)>temp.at(j))
+		while(j>0 && InsertionTemp.at(j-1)>InsertionTemp.at(j))
 		{
-			tmp=temp.at(j);
-			temp.at(j)=temp.at(j-1);
-			temp.at(j-1)=tmp;
+			temp=InsertionTemp.at(j);
+			InsertionTemp.at(j)=InsertionTemp.at(j-1);
+			InsertionTemp.at(j-1)=temp;
 			j--;
 		}
 	}
-	return temp;
+	return InsertionTemp;
 }
